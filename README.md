@@ -15,3 +15,4 @@ Technologies:
 	•	QT (App design)
 	•	Cpp (work with tables)
 	•	vdsina (Hosting)
+ artem krasava
