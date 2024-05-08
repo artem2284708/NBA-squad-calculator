@@ -16,7 +16,7 @@ curTeam = curAdvanced.loc[curAdvanced['tm'] == f'{team}']   # фильтр по 
 
 mp_team = curTeam.sort_values(by='mp', ascending=False)[['pos', 'player']]  # фильтр по минутам
 
-# этим я избегаю ошибки со стартовой пятёркой (каждый игрок должен быть со своей позиции)
+# этим избегаем ошибки со стартовой пятёркой (каждый игрок должен быть со своей позиции)
 squad = pd.DataFrame(columns=['pos', 'player'])
 pos = ['PG', 'SG', 'SF', 'PF', 'C']
 
