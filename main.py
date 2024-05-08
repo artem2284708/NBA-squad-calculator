@@ -10,6 +10,29 @@ team = input().upper()  # тут человек пишет название ко
 
 
 curTeam = curAdvanced.loc[curAdvanced['tm'] == f'{team}']   # фильтр по команде
-outputTable1 = curTeam.sort_values(by='mp', ascending=False)[['pos', 'player']]     # вывод первой таблицы
 
-print(outputTable1)
+"Тут начинается вывод таблицы №1"
+
+
+mp_team = curTeam.sort_values(by='mp', ascending=False)[['pos', 'player']]  # фильтр по минутам
+
+# этим я избегаю ошибки со стартовой пятёркой (каждый игрок должен быть со своей позиции)
+squad = pd.DataFrame(columns=['pos', 'player'])
+pos = ['PG', 'SG', 'SF', 'PF', 'C']
+
+for i in pos:
+    curPos = (mp_team.loc[mp_team['pos'] == f'{i}']) # фильтр по позиции
+    player = curPos.loc[curPos['pos'] == f'{i}'].iloc[0]  # выбор игрока с максимальным временем на позиции
+    squad = squad._append(player)
+
+
+# список индексов игроков в starting_5
+selected_players_index = squad.index.tolist()
+
+# Удаляю игроков по индексу из starting_5 и вывожу всех остальных также по времени
+curTeam_updated = mp_team.drop(index=selected_players_index)
+
+squad = squad._append(curTeam_updated)
+
+print(squad)
+
