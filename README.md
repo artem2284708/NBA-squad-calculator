@@ -2,7 +2,7 @@
 
 ___
 
-Project was created by team group **DSBA231-1**:
+Project was created by team group **DSBA231-2**:
 Tarasov Artem, Ekaterina Sushko, Konstantin Dubenskiy 
 
  ______________________________________________________
@@ -15,4 +15,3 @@ Technologies:
 	•	QT (App design)
 	•	Cpp (work with tables)
 	•	vdsina (Hosting)
- artem krasava
