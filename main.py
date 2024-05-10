@@ -34,5 +34,5 @@ curTeam_updated = mp_team.drop(index=selected_players_index)
 
 squad = squad._append(curTeam_updated)
 
-print(squad)
+print(curTeam.columns)
 
