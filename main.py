@@ -7,7 +7,6 @@ new_column_names = ['Rk', 'player', 'Tm', '2023-24', '2024-25', '2025-26', '2026
 salary.columns = new_column_names
 
 salary = salary[1:500]
-
 '''def convert_dollar_to_int(s):
     if isinstance(s, str):
         return int(s.replace("$", "").replace(",", ""))
