@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Open the file containing main statistics
-advanced = pd.read_csv('/Advanced.csv')
+advanced = pd.read_csv('~/PycharmProjects/NbaSquadGenerator/File.csv/Advanced.csv')
 # Open the file containing salary information
 salary = pd.read_excel('~/PycharmProjects/NbaSquadGenerator/File.csv/NBA Player Contracts.xlsx')
 
