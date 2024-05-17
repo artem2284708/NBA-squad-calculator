@@ -12,7 +12,7 @@ Data set:
 
 Technologies:
 
-	•	QUI (App design)
+	•	GUI (App design)
 	•	Cpp (for design)
 	•	Pandas (for table preprocessing)
 	•	vdsina (Hosting)
