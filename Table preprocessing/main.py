@@ -51,3 +51,15 @@ output_Table1 = squad.to_string(index=False)
 
 # Print Table 1
 print(output_Table1)
+
+squa = pd.DataFrame(columns=['pos', 'player', 'Guaranteed'])
+per_team = curTeam.sort_values(by='per', ascending=False)[['pos', 'player', 'Guaranteed']]
+for i in pos:
+        # Filter players by position
+        curPos = (per_team.loc[per_team['pos'] == f'{i}'])
+        # Select the player with the maximum time played for each position
+        player = curPos.loc[curPos['pos'] == f'{i}'].iloc[0]
+        squa = squa._append(player)  # Append the player to the squad DataFrame
+per_team_players_index = squa.index.tolist()
+
+further = set(per_team_players_index + selected_players_index)
