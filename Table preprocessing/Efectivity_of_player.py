@@ -1,4 +1,5 @@
-from main import curTeam  # Importing curTeam from main module
+from squadInfo import curTeam  # Importing curTeam from main module
+from squadInfo import further
 
 
 def convert_dollar_to_int(s):
@@ -50,6 +51,10 @@ def real_sum(col: list, DataFrame):
     return int(right_sum)
 
 
+for i in further:
+    if i in curTeam.index:
+        curTeam = curTeam.drop(index=i)
+
 columns = ['2023-24', '2024-25', '2025-26', '2026-27', '2027-28', '2028-29']
 
 # Convert dollar strings to integers for each column
@@ -63,8 +68,8 @@ curTeam['Total Salary'] = curTeam.apply(lambda row: real_sum(columns, row), axis
 final_df = curTeam[['player', 'pos', 'mp', 'age', 'per', 'Total Salary']]
 
 # Calculate a metric combining salary and performance (wrong formula)
-final_df['price & quality'] = final_df.apply(lambda row: int(row['Total Salary']/row['per']), axis=1)
+final_df['price/quality'] = final_df.apply(lambda row: int(row['Total Salary']/row['per']), axis=1)
 # The formula should be updated, as noted.
 
 # Sort the DataFrame by the calculated metric
-print(final_df.sort_values(by='price & quality', ascending=False))
+final = final_df.sort_values(by='price/quality', ascending=False).head()
