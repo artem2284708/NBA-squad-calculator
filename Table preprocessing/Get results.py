@@ -4,7 +4,6 @@ from outCandidates import Output2
 from potentialNewcomers import Output3
 
 
-
 print(Output0)
 print()
 print(Output1)
