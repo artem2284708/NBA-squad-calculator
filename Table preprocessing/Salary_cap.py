@@ -1,8 +1,7 @@
-
-from main import team  # Importing the 'team' variable from the main module.
-
+from squadInfo import team  # Importing the 'team' variable from the main module.
 
 import pandas as pd  # Importing pandas library for data manipulation and analysis.
+
 
 # Reading the CSV file that contains NBA team abbreviations into a pandas DataFrame.
 abb = pd.read_csv('~/PycharmProjects/NbaSquadGenerator/File.csv/Dump/Team Abbrev.csv')
@@ -45,7 +44,4 @@ else:
 final = final[['Rk', 'team', '2023-24']]
 
 # Converting the final DataFrame to a string format without the index for a clean print output.
-output_Table1 = final.to_string(index=False)
-
-# Printing the final table.
-print(output_Table1)
+Output0 = final.to_string(index=False)

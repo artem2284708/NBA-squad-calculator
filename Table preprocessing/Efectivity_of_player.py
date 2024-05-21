@@ -1,5 +1,5 @@
-from main import curTeam  # Importing curTeam from main module
-from main import further
+from squadInfo import curTeam  # Importing curTeam from main module
+from squadInfo import further
 
 
 def convert_dollar_to_int(s):
@@ -72,4 +72,4 @@ final_df['price/quality'] = final_df.apply(lambda row: int(row['Total Salary']/r
 # The formula should be updated, as noted.
 
 # Sort the DataFrame by the calculated metric
-print(final_df.sort_values(by='price/quality', ascending=False))
+final = final_df.sort_values(by='price/quality', ascending=False).head()
