@@ -4,10 +4,8 @@ from outCandidates import Output2
 from potentialNewcomers import Output3
 
 
-print(Output0)
-print()
-print(Output1)
-print()
-print(Output2)
-print()
-print(Output3)
+Output0.to_csv('Salary Cap')
+Output1.to_csv('Squad Info')
+Output2.to_csv('Players for out')
+Output3.to_csv('Players to buy')
+
