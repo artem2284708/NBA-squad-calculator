@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pixmap("/Users/artem2284708/Downloads/NBA-squad-calculator-main 2/File.csv/nba logos/West/Denver Nuggets logo.png");
+    QPixmap pixmap("D:\Qt\NBA-squad-calculator-4efbe96d857e28629352847526f628d1e54dc9d9\File.csv\nba logos\West\Denver_Nuggets_logo.png");
     pixmap = pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio);
     ui->label->setPixmap(pixmap);
     connect(ui->label , &ClickableLabel::clicked, this, &MainWindow::clicked);
@@ -23,7 +23,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::clicked()
 {
-    ui->lineEdit->setText("hello");
+    form.show();
 }
 
 
