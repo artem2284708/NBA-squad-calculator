@@ -20,8 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
     QPixmap pixmap_memphis("D:/Qt/NBA-squad-calculator-fg/File.csv/nba_logos/West/Memphis_Grizzlies_logo.png");
     pixmap_memphis = pixmap_memphis.scaled(ui->label_logo_2->size(), Qt::KeepAspectRatio);
     ui->label_logo_2->setPixmap(pixmap_memphis);
-    //connect(ui->label_logo_2, &ClickableLabel::clicked, this, &MainWindow::showForm_2);
-    //ui->label_2->setText("Memphis_Grizzlies");
+    connect(ui->label_logo_2, &ClickableLabel::clicked, this, &MainWindow::showForm_2);
+    ui->label_2->setText("Memphis_Grizzlies");
 }
 
 MainWindow::~MainWindow()
