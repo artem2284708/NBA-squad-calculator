@@ -3,7 +3,7 @@
 #include <QProcess>
 #include <QFile>
 #include <QDebug>
-
+#include <QPixmap>
 
 void readCSV(const QString &filePath) {
     QFile file(filePath);
@@ -20,7 +20,6 @@ void readCSV(const QString &filePath) {
     }
 }
 
-
 Form::Form(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Form)
@@ -29,8 +28,7 @@ Form::Form(QWidget *parent)
 
     QProcess *process = new QProcess(this);
 
-
-    process->start("sh", {"/Users/artem2284708/PycharmProjects/NbaSquadGenerator/Table_preprocessing/run.sh" , "MEM"});
+    process->start("sh", {"D:/pythonprepro/Table preprocessing/run.sh" , "MEM"});
     // process->start("python3", {"--version"});
 
     process->waitForFinished();
@@ -59,10 +57,16 @@ Form::Form(QWidget *parent)
     qDebug() << process->readAllStandardOutput();
     qDebug() << process->readAllStandardError();
 
-    readCSV("/Users/artem2284708/PycharmProjects/NbaSquadGenerator/Table_preprocessing/Salary.csv");
-    readCSV("/Users/artem2284708/PycharmProjects/NbaSquadGenerator/Table_preprocessing/Squad.csv");
-    readCSV("/Users/artem2284708/PycharmProjects/NbaSquadGenerator/Table_preprocessing/Newcomers.csv");
-    readCSV("/Users/artem2284708/PycharmProjects/NbaSquadGenerator/Table_preprocessing/Kick.csv");
+    readCSV("D:/pythonprepro/Table preprocessing/Salary.csv");
+    readCSV("D:/pythonprepro/Table preprocessing/Squad.csv");
+    readCSV("D:/pythonprepro/Table preprocessing/Newcomers.csv");
+    readCSV("D:/pythonprepro/Table preprocessing/Kick.csv");
+
+    // Загрузка изображения в QLabel
+    QString imagePath = "D:/Qt/NBA-squad-calculator-artem2284708-patch-1/File.csv/nba_logos/West/Denver_Nuggets_logo.png";
+    QPixmap pixmap(imagePath);
+    ui->label2->setPixmap(pixmap.scaled(ui->label2->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+
 }
 
 Form::~Form()
