@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <form.h>
+#include <form_2.h>
+#include "clickablelabel.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,10 +20,14 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void clicked();
+
+private slots:
+    void showForm();
+    void showForm_2();
 
 private:
     Ui::MainWindow *ui;
     Form form;
+    Form_2 form_2;
 };
 #endif // MAINWINDOW_H

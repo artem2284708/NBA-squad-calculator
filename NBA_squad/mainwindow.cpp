@@ -8,12 +8,20 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pixmap("D:\Qt\NBA-squad-calculator-4efbe96d857e28629352847526f628d1e54dc9d9\File.csv\nba logos\West\Denver_Nuggets_logo.png");
-    pixmap = pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio);
-    ui->label->setPixmap(pixmap);
-    connect(ui->label , &ClickableLabel::clicked, this, &MainWindow::clicked);
 
-    // connect(ui->label, SIGNAL())
+    // Настройка первого лейбла с картинкой
+    QPixmap pixmap_nuggets("D:/Qt/NBA-squad-calculator-fg/File.csv/nba_logos/West/Denver_Nuggets_logo.png");
+    pixmap_nuggets = pixmap_nuggets.scaled(ui->label_logo->size(), Qt::KeepAspectRatio);
+    ui->label_logo->setPixmap(pixmap_nuggets);
+    connect(ui->label_logo, &ClickableLabel::clicked, this, &MainWindow::showForm);
+    ui->label->setText("Denver_Nuggets");
+
+    // Настройка второго лейбла с картинкой
+    QPixmap pixmap_memphis("D:/Qt/NBA-squad-calculator-fg/File.csv/nba_logos/West/Memphis_Grizzlies_logo.png");
+    pixmap_memphis = pixmap_memphis.scaled(ui->label_logo_2->size(), Qt::KeepAspectRatio);
+    ui->label_logo_2->setPixmap(pixmap_memphis);
+    //connect(ui->label_logo_2, &ClickableLabel::clicked, this, &MainWindow::showForm_2);
+    //ui->label_2->setText("Memphis_Grizzlies");
 }
 
 MainWindow::~MainWindow()
@@ -21,9 +29,12 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::clicked()
+void MainWindow::showForm()
 {
     form.show();
 }
 
-
+void MainWindow::showForm_2()
+{
+    form_2.show();
+}

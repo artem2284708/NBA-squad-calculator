@@ -27,6 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         form.h form.cpp form.ui
+        form_2.h form_2.cpp form_2.ui
 
 
     )
