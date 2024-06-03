@@ -47,7 +47,7 @@ Form::Form(QWidget *parent)
     // Открываем файл из ресурсов. Вместо данного файла
     // необходимо указывать путь к вашему требуемому файлу
 
-    QFile kickFile("D:/Qt/NBA-squad-calculator-artem2284708-patch-1/NBA_squad/Kick.csv");
+    QFile kickFile("D:/Qt/NBA-squad-calculator-fg/File.csv/Kick.csv");
     if ( !kickFile.open(QFile::ReadOnly | QFile::Text) ) {
         qDebug() << "File not exists";
     } else {
@@ -80,7 +80,7 @@ Form::Form(QWidget *parent)
 
     ui->tableView_2->setModel(salaryModel); // Устанавливаем модель в таблицу
 
-    QFile salaryFile("D:/Qt/NBA-squad-calculator-artem2284708-patch-1/NBA_squad/Salary.csv");
+    QFile salaryFile("D:/Qt/NBA-squad-calculator-fg/File.csv/Salary.csv");
     if ( !salaryFile.open(QFile::ReadOnly | QFile::Text) ) {
         qDebug() << "File not exists";
     } else {
@@ -112,7 +112,7 @@ Form::Form(QWidget *parent)
 
     ui->tableView_3->setModel(newcomersModel); // Устанавливаем модель в таблицу
 
-    QFile newcomersFile("D:/Qt/NBA-squad-calculator-artem2284708-patch-1/NBA_squad/Newcomers.csv");
+    QFile newcomersFile("D:/Qt/NBA-squad-calculator-fg/File.csv/Newcomers.csv");
     if ( !newcomersFile.open(QFile::ReadOnly | QFile::Text) ) {
         qDebug() << "File not exists";
     } else {
@@ -133,8 +133,40 @@ Form::Form(QWidget *parent)
         newcomersFile.close();
     }
 
+
+    //четвертая таблица squad
+    QHeaderView* header_horizontal_4 = ui->tableView_4->horizontalHeader();
+    header_horizontal_4->setSectionResizeMode(QHeaderView::Stretch);
+    QHeaderView* header_vertical_4 = ui->tableView_4->verticalHeader();
+    header_vertical_4->setSectionResizeMode(QHeaderView::Stretch);
+
+    ui->tableView_4->verticalHeader()->hide();
+    ui->tableView_4->horizontalHeader()->hide();
+
+    ui->tableView_4->setModel(squadModel); // Устанавливаем модель в таблицу
+
+    QFile squadFile("D:/Qt/NBA-squad-calculator-fg/File.csv/Squad.csv");
+    if ( !squadFile.open(QFile::ReadOnly | QFile::Text) ) {
+        qDebug() << "File not exists";
+    } else {
+        // Создаем поток для извлечения данных из файла
+        QTextStream in(&squadFile);
+        // Считываем данные до конца файла
+        while (!in.atEnd()) {
+            // ... построчно
+            QString line = in.readLine();
+            // Добавляем в модель по строке с элементами
+            QList<QStandardItem *> standardItemsList;
+            // учитываем, что строка разделяется точкой с запятой на колонки
+            for (QString item : line.split(",")) {
+                standardItemsList.append(new QStandardItem(item));
+            }
+            squadModel->insertRow(squadModel->rowCount(), standardItemsList);
+        }
+        squadFile.close();
+    }
     // Загрузка изображения в QLabel
-    QString imagePath = "D:/Qt/NBA-squad-calculator-artem2284708-patch-1/File.csv/nba_logos/West/Denver_Nuggets_logo.png";
+    QString imagePath = "D:/Qt/NBA-squad-calculator-fg/File.csv/nba_logos/West/Denver_Nuggets_logo.png";
     QPixmap pixmap(imagePath);
     ui->label2->setPixmap(pixmap.scaled(ui->label2->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
 }
