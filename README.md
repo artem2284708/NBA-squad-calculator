@@ -1,6 +1,3 @@
-**NBA squad calculator**
-
-
 ## Project Overview
 This project evaluates team rosters based on the ratio of individual statistics and player cost. It identifies the worst-performing players and recommends alternative players for the same position. This tool aims to optimize team performance by suggesting cost-effective player replacements.
 
@@ -25,9 +22,9 @@ The dataset used for this project can be found: [NBA Stats Dataset](https://www.
 
 ## Contact
 For any questions or suggestions, please contact any of the team members from DSBA231-2:
-- Tarasov Artem
-- Ekaterina Sushko
-- Konstantin Dubenskiy
+- [Tarasov Artem](https://github.com/artem2284708)
+- [Ekaterina Sushko](https://github.com/ekaterinassss)
+- [Konstantin Dubenskiy](https://github.com/konstantin06)
 
 ---
 
