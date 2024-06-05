@@ -2,7 +2,6 @@
 #define FORM_H
 
 #include <QWidget>
-#include <QStandardItemModel>
 
 namespace Ui {
 class Form;
@@ -18,8 +17,6 @@ public:
 
 private:
     Ui::Form *ui;
-    QStandardItemModel *csvModel;
-
 };
 
 #endif // FORM_H
