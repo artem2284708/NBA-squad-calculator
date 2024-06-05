@@ -6,10 +6,10 @@ This project evaluates team rosters based on the ratio of individual statistics 
 The dataset used for this project can be found: [NBA Stats Dataset](https://www.kaggle.com/datasets/4cf9e8ce65a339e1907aedef4cc16f5dd125bf9999b0050291b550746f53b8ac)
 
 ## Technologies
- • GUI - (App design for user interaction)
- • C++ - Core design and implementation
- • Pandas - Data preprocessing and manipulation
- • Argparse - Facilitating the connection between Python and QT for integrated functionality
+    • GUI - (App design for user interaction)
+    • C++ - Core design and implementation
+    • Pandas - Data preprocessing and manipulation
+    • Argparse - Facilitating the connection between Python and QT for integrated functionality
 
 
 ## Functional Description
@@ -22,9 +22,9 @@ The dataset used for this project can be found: [NBA Stats Dataset](https://www.
 
 ## Contact
 For any questions or suggestions, please contact any of the team members from DSBA231-2:
-- [Tarasov Artem](https://github.com/artem2284708)
-- [Ekaterina Sushko](https://github.com/ekaterinassss)
-- [Konstantin Dubenskiy](https://github.com/konstantin06)
+- Tarasov Artem - [link](https://github.com/artem2284708)
+- Ekaterina Sushko - [link](https://github.com/ekaterinassss)
+- Konstantin Dubenskiy - [link](https://github.com/konstantin06)
 
 ---
 
