@@ -21,7 +21,7 @@ The dataset used for this project can be found: [NBA Stats Dataset](https://www.
       
 
 ## Contact
-For any questions or suggestions, please contact any of the team members from DSBA231-2:
+For any questions or suggestions, please contact any of the team members from **DSBA231-2**:
 - Tarasov Artem - [link](https://github.com/artem2284708)
 - Ekaterina Sushko - [link](https://github.com/ekaterinassss)
 - Konstantin Dubenskiy - [link](https://github.com/konstantin06)
