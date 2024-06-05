@@ -3,7 +3,7 @@ This project evaluates team rosters based on the ratio of individual statistics 
 
 
 ## Dataset
-The dataset used for this project can be found: [NBA Stats Dataset](https://www.kaggle.com/datasets/4cf9e8ce65a339e1907aedef4cc16f5dd125bf9999b0050291b550746f53b8ac)
+The dataset used for this project can be found: [NBA Stats Dataset](https://www.basketball-reference.com/leagues/NBA_2024_advanced.html)
 
 ## Technologies
     • GUI - (App design for user interaction)
