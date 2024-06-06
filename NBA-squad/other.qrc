@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/p">
+        <file>aa.png</file>
+        <file>basketballmain.png</file>
+        <file>bb.png</file>
+        <file>mmm.png</file>
+    </qresource>
+    <qresource prefix="/pic">
+        <file>nba_logos/East/Atlanta Hawks.png</file>
+        <file>nba_logos/East/Boston Celtics Miami Heat Brooklyn Nets.png</file>
+        <file>nba_logos/East/Brooklyn Nets logo.png</file>
+        <file>nba_logos/East/Cavaliers NBA Logo.png</file>
+        <file>nba_logos/East/Chicago Bulls vs Boston Celtics logo.png</file>
+        <file>nba_logos/East/Detroit Pistons Logo.png</file>
+        <file>nba_logos/East/Miami Heat logo.svg.png</file>
+        <file>nba_logos/East/Milwaukee Bucks logo.png</file>
+        <file>nba_logos/East/NBA Logos Clipart.png</file>
+        <file>nba_logos/East/NBA Team Logos.png</file>
+        <file>nba_logos/East/New York Knicks logo.png</file>
+        <file>nba_logos/East/Orlando Magic NBA.png</file>
+        <file>nba_logos/East/Philadelphia 76ers logo.png</file>
+        <file>nba_logos/East/Phoenix Suns Talking Stick Arena.png</file>
+        <file>nba_logos/East/Washington Wizards.png</file>
+        <file>nba_logos/West/Denver_Nuggets_logo.png</file>
+        <file>nba_logos/West/Houston Rockets logo.png</file>
+        <file>nba_logos/West/Lakers 2017-18 vs Knicks logo.png</file>
+        <file>nba_logos/West/Mavericks Heat Nuggets Thunder.png</file>
+        <file>nba_logos/West/Memphis Grizzlies logo.png</file>
+        <file>nba_logos/West/NBA Clippers Lakers Logo.png</file>
+        <file>nba_logos/West/NBA Finals Oracle Arena.png</file>
+        <file>nba_logos/West/NBA Teams Logo.png</file>
+        <file>nba_logos/West/New Orleans Pelicans logo.png</file>
+        <file>nba_logos/West/OKC Thunder vs Lakers 2013-14.png</file>
+        <file>nba_logos/West/Sacramento Kings 2016-17 Season.png</file>
+        <file>nba_logos/West/San Antonio Spurs logo.png</file>
+        <file>nba_logos/West/Timberwolves Clippers Lakers.png</file>
+        <file>nba_logos/West/Trail Blazers 2016-17 NBA.png</file>
+        <file>nba_logos/West/Utah Jazz logo 2022.svg.png</file>
+    </qresource>
+    <qresource prefix="/tables">
+        <file>Kick.csv</file>
+        <file>Newcomers.csv</file>
+        <file>Salary.csv</file>
+        <file>Squad.csv</file>
+    </qresource>
+</RCC>
