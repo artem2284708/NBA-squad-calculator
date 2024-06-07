@@ -2,81 +2,141 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1285</width>
-    <height>659</height>
+    <width>1019</width>
+    <height>809</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true"/>
-  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="ClickableLabel" name="label_logo">
+   <widget class="QLabel" name="img">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>221</width>
-      <height>181</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>210</y>
-      <width>221</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel_nuggets</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>210</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel_memphis</string>
-    </property>
-   </widget>
-   <widget class="ClickableLabel" name="label_logo_2">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>10</y>
-      <width>181</width>
-      <height>181</height>
+      <x>-10</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>801</height>
      </rect>
     </property>
     <property name="text">
      <string>TextLabel</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>650</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="palette">
+        <palette>
+         <active/>
+         <inactive/>
+         <disabled/>
+        </palette>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bell MT</family>
+         <bold>true</bold>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+        id: testButton
+        anchors.centerIn: parent
+        text: qsTr(&quot;testButton&quot;)
+        contentItem: Text {
+            text: testButton.text
+            color: &quot;#ffffff&quot;
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            font.pointSize: 10
+        }
+       background: Rectangle {
+            Gradient {
+                id: normalGradient
+                GradientStop { position: 0.0; color: &quot;#252525&quot; }
+                GradientStop { position: 0.5; color: &quot;#e30000&quot; }
+                GradientStop { position: 1.0; color: &quot;#252525&quot; }
+            }
+            Gradient {
+                id: hoveredGradient
+                GradientStop { position: 0.0; color: &quot;#252525&quot; }
+                GradientStop { position: 0.5; color: &quot;#ff5e5e&quot; }
+                GradientStop { position: 1.0; color: &quot;#252525&quot; }
+            }
+            Gradient {
+                id: pressedGradient
+                GradientStop { position: 0.0; color: &quot;#252525&quot; }
+                GradientStop { position: 0.5; color: &quot;#b00000&quot; }
+                GradientStop { position: 1.0; color: &quot;#252525&quot; }
+            }
+     }
+ }</string>
+       </property>
+       <property name="text">
+        <string>West</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>148</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="font">
+        <font>
+         <family>Bell MT</family>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>East</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -84,20 +144,13 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1285</width>
-     <height>21</height>
+     <width>1019</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>ClickableLabel</class>
-   <extends>QLabel</extends>
-   <header>clickablelabel.h</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -2,10 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <form.h>
-#include <form_2.h>
-#include "clickablelabel.h"
-
+#include "east.h"
+#include "west.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,12 +20,13 @@ public:
     ~MainWindow();
 
 private slots:
-    void showForm();
-    void showForm_2();
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;
-    Form form;
-    Form_2 form_2;
+    East east;
+    West west;
 };
 #endif // MAINWINDOW_H
