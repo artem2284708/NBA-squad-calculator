@@ -20,3 +20,4 @@ curAdvanced = advanced.loc[advanced['season'] == 2024]
 total = pd.merge(curAdvanced, salary, on='player', how='inner').drop(columns='birth_year')
 total = total.drop_duplicates(subset='player')
 total = total[total['per'] > 0]
+total.to_csv("/Users/artem2284708/PycharmProjects/NbaSquadGenerator/Table_preprocessing/Total.csv")
