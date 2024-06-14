@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1019</width>
+    <height>809</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="img">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1021</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>140</y>
+      <width>251</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bell MT</family>
+      <pointsize>35</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>East</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>271</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active/>
+      <inactive/>
+      <disabled/>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bell MT</family>
+      <pointsize>35</pointsize>
+      <bold>true</bold>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+        id: testButton
+        anchors.centerIn: parent
+        text: qsTr(&quot;testButton&quot;)
+        contentItem: Text {
+            text: testButton.text
+            color: &quot;#ffffff&quot;
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            font.pointSize: 10
+        }
+       background: Rectangle {
+            Gradient {
+                id: normalGradient
+                GradientStop { position: 0.0; color: &quot;#252525&quot; }
+                GradientStop { position: 0.5; color: &quot;#e30000&quot; }
+                GradientStop { position: 1.0; color: &quot;#252525&quot; }
+            }
+            Gradient {
+                id: hoveredGradient
+                GradientStop { position: 0.0; color: &quot;#252525&quot; }
+                GradientStop { position: 0.5; color: &quot;#ff5e5e&quot; }
+                GradientStop { position: 1.0; color: &quot;#252525&quot; }
+            }
+            Gradient {
+                id: pressedGradient
+                GradientStop { position: 0.0; color: &quot;#252525&quot; }
+                GradientStop { position: 0.5; color: &quot;#b00000&quot; }
+                GradientStop { position: 1.0; color: &quot;#252525&quot; }
+            }
+     }
+ }</string>
+    </property>
+    <property name="text">
+     <string>West</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/p">
+        <file>aa.png</file>
+        <file>basketballmain.png</file>
+        <file>bb.png</file>
+        <file>mmm.png</file>
+        <file>nba-previews.png</file>
+    </qresource>
+    <qresource prefix="/pic">
+        <file>nba_logos/WAS.png</file>
+        <file>nba_logos/UTA.png</file>
+        <file>nba_logos/TOR.png</file>
+        <file>nba_logos/SAS.png</file>
+        <file>nba_logos/SAC.png</file>
+        <file>nba_logos/POR.png</file>
+        <file>nba_logos/PHO.png</file>
+        <file>nba_logos/PHI.png</file>
+        <file>nba_logos/ORL.png</file>
+        <file>nba_logos/OKC.png</file>
+        <file>nba_logos/NYK.png</file>
+        <file>nba_logos/NOP.png</file>
+        <file>nba_logos/MIN.png</file>
+        <file>nba_logos/MIL.png</file>
+        <file>nba_logos/MIA.png</file>
+        <file>nba_logos/MEM.png</file>
+        <file>nba_logos/LAL.png</file>
+        <file>nba_logos/LAC.png</file>
+        <file>nba_logos/IND.png</file>
+        <file>nba_logos/HOU.png</file>
+        <file>nba_logos/GSW.png</file>
+        <file>nba_logos/DET.png</file>
+        <file>nba_logos/DEN.png</file>
+        <file>nba_logos/DAL.png</file>
+        <file>nba_logos/CLE.png</file>
+        <file>nba_logos/CHO.png</file>
+        <file>nba_logos/CHI.png</file>
+        <file>nba_logos/BRK.png</file>
+        <file>nba_logos/BOS.png</file>
+        <file>nba_logos/ATL.png</file>
+    </qresource>
+    <qresource prefix="/tables">
+        <file>Kick.csv</file>
+        <file>Newcomers.csv</file>
+        <file>Salary.csv</file>
+        <file>Squad.csv</file>
+    </qresource>
+</RCC>
